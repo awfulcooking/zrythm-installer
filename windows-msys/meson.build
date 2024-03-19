@@ -228,7 +228,7 @@ drmingw_zip = custom_target (
 
 # install dependencies
 carla_packages = []
-foreach arch : [ 'ucrt64', 'mingw32' ]
+foreach arch : [ 'ucrt64', 'mingw32', 'clangarm64' ]
 #foreach arch : [ '32' ]
   carla_pkg_target = custom_target (
   'mingw-carla-' + arch,
